@@ -20,7 +20,11 @@ int main() {
     std::cin >> r;
 
 
-    //std::cout << "The Circles area based off of the radius given: ";
+    if (r < 0) {
+        std::cout << "Invalid radius" << std::endl;
+        return 1;
+    }
+    std::cout << "Diameter: " << SQUARE(r) << std::endl
     std::cout << "Area of Circle: " << circleArea(r) << std::endl;
 
     if (evenNum(r)) {
